@@ -12,7 +12,7 @@ import * as core from "@actions/core";
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        args: ["--hard"],
+        args: ["--hard", "origin/main"],
       }),
     });
 

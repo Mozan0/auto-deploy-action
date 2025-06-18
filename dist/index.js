@@ -19821,7 +19821,7 @@ var core = __toESM(require_core());
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        args: ["--hard"]
+        args: ["--hard", "origin/main"]
       })
     });
     const result = await response.json();
