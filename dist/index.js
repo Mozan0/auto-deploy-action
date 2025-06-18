@@ -19817,7 +19817,7 @@ var core = __toESM(require_core());
     const response = await fetch(`${apiUrl}/versioncontrol/commands/reset`, {
       method: "POST",
       headers: {
-        Authorization: apiKey,
+        Authorization: `apikey ${apiKey}`,
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
