@@ -8,7 +8,7 @@ import * as core from "@actions/core";
     const response = await fetch(`${apiUrl}/versioncontrol/commands/reset`, {
       method: "POST",
       headers: {
-        Authorization: apiKey,
+        Authorization: `apikey ${apiKey}`,
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
