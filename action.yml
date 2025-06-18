@@ -7,6 +7,12 @@ inputs:
   apiKey:
     description: "API Key for authentication"
     required: true
+  remote:
+    description: "Remote name like 'origin'"
+    required: true
+  branch:
+    description: "Branch like, 'main'"
+    required: true
 runs:
   using: "node20"
   main: "dist/index.js"
