@@ -1,0 +1,12 @@
+name: "Version Control Deploy"
+description: "Trigger deploy to production instance"
+inputs:
+  apiUrl:
+    description: "Base API URL like https://prod-instance.spicaengine.com/api"
+    required: true
+  apiKey:
+    description: "API Key for authentication"
+    required: true
+runs:
+  using: "node20"
+  main: "dist/index.js"
