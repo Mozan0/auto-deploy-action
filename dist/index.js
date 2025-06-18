@@ -19809,7 +19809,7 @@ Support boolean input list: \`true | True | TRUE | false | False | FALSE\``);
 });
 
 // src/index.ts
-var core = __toESM(require_core(), 1);
+var core = __toESM(require_core());
 (async function run() {
   const apiUrl = core.getInput("apiUrl", { required: true });
   const apiKey = core.getInput("apiKey", { required: true });
